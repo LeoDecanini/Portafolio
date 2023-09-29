@@ -1,0 +1,360 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+
+/* secction hero - inicioPage */
+.hero {
+  position: relative;
+  text-align: left;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  background-image: url(img/Prismatefondogifleo.gif);
+  background-color: #000000;
+  background-size: cover;
+  min-height: 100vh;
+}
+.contenedor-pagina-inicio {
+  padding-right: 50px;
+  width: 50%;
+}
+.contenedor-pagina-inicio-img img {
+  width: 500px;
+  border-radius: 20px;
+}
+.contenedor-pagina-inicio h1 {
+  font-size: 6em;
+  position: relative;
+}
+.contenedor-pagina-inicio h2 {
+  font-size: 3em;
+}
+.contenedor-pagina-inicio p {
+  font-size: 1.5em;
+  padding: 30px 0;
+}
+.contenedor-pagina-inicio button {
+  color: white;
+  padding: 1px 30px 5px 30px;
+  border: 1px solid white;
+  border-radius: 15px;
+  font-size: 2em;
+}
+.contenedor-pagina-inicio button:hover {
+  background: linear-gradient(45deg, #dc53d9, #2f00ff);
+  cursor: pointer;
+}
+.oculto {
+  display: none;
+}
+
+.Aboutme {
+  position: relative;
+  text-align: left;
+  background-color: #000000;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 0 100px;
+}
+.texto-aboutme {
+  width: 50%;
+  padding-right: 100px;
+}
+.texto-aboutme h2 {
+  font-size: 6em;
+}
+.texto-aboutme p {
+  font-size: 1.2em;
+  padding: 10px 0;
+}
+.skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: left;
+  width: 50%;
+}
+.skills h2 {
+  font-size: 3em;
+}
+.skills ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  text-align: center;
+  justify-content: center;
+}
+.skills img {
+  width: 60px;
+  margin: 50px;
+}
+.boton-cv {
+  padding: 8px 30px 8px 30px;
+  margin-top: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+}
+.boton-cv:hover {
+  background: linear-gradient(45deg, #dc53d9, #2f00ff);
+  cursor: pointer;
+}
+
+.Services {
+  display: flex;
+  background-color: #000000;
+  color: white;
+  background-size: cover;
+  min-height: 100vh;
+  padding: 0 100px;
+  align-items: center;
+}
+.Services h2 {
+  font-size: 6em;
+}
+.servicio-contenedor {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+.sv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 50px 20px;
+
+  width: 33%;
+  text-align: center;
+}
+.sv h3 {
+  font-size: 1.8em;
+  margin-bottom: 10px;
+}
+
+.icon {
+  font-size: 4em;
+  margin-bottom: 20px;
+}
+
+.trabajos {
+  position: relative;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #000000;
+}
+
+.trabajos h2 {
+  margin-left: 100px;
+  font-size: 5em;
+}
+
+.contenedor-video {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 100px;
+}
+
+.contenedor-texto-trabajos {
+  padding: 30px;
+  font-size: 1.3em;
+}
+
+.contenedor-texto-trabajos h3 {
+  font-size: 1.5em;
+}
+
+.contenedor-texto-trabajos p {
+  padding: 10px 0;
+}
+
+.color-cursos {
+  color: #ff00ea;
+  font-weight: bold;
+}
+
+.video iframe:hover {
+  cursor: pointer;
+}
+
+.urlpag {
+  padding: 4px 15px 4px 15px;
+  margin-top: 20px;
+  border: 1px solid rgb(255, 255, 255);
+  border-radius: 10px;
+  font-size: 0.8em;
+}
+.urlpag:hover {
+  background: linear-gradient(45deg, #dc53d9, #2f00ff);
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1500px) {
+  .Aboutme {
+    padding: 0 50px;
+    justify-content: space-around;
+  }
+  .hero {
+    justify-content: space-around;
+  }
+  .Services {
+    padding: 0 50px;
+  }
+  .contenedor-video {
+    padding: 50px;
+  }
+  .sv {
+    width: 600px;
+  }
+  .trabajos h2 {
+    margin-left: 50px;
+  }
+  .texto-aboutme {
+    padding-right: 0px;
+  }
+}
+
+@media only screen and (max-width: 1440px) {
+  .video iframe {
+    width: 500px;
+    height: 300px;
+  }
+}
+
+@media only screen and (max-width: 1200px) {
+  .contenedor-video {
+    padding: 50px;
+    flex-direction: column;
+  }
+  .Aboutme {
+    flex-direction: column;
+  }
+  .texto-aboutme {
+    width: 100%;
+  }
+  .skills {
+    width: 80%;
+  }
+  .skills ul {
+    justify-content: space-between;
+    flex-wrap: wrap;
+  }
+  .hero {
+    flex-direction: column;
+  }
+  .contenedor-pagina-inicio {
+    padding-right: 0;
+    padding-top: 50px;
+    width: 90%;
+  }
+  .contenedor-pagina-inicio-img img {
+    width: 400px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .contenedor-pagina-inicio-img img {
+    width: 300px;
+  }
+  .texto-aboutme h2 {
+    font-size: 5em;
+  }
+  .texto-aboutme p {
+    font-size: 1em;
+  }
+  .Services h2 {
+    font-size: 5em;
+  }
+  .contenedor-video {
+    padding: 30px;
+  }
+  .Services {
+    padding: 0 0px;
+  }
+  .Services h2 {
+    padding-left: 50px;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .sv {
+    width: 480px;
+  }
+}
+
+@media only screen and (max-width: 510px) {
+  .Aboutme {
+    padding: 0 20px;
+    justify-content: space-around;
+  }
+  .texto-aboutme h2 {
+    font-size: 3em;
+  }
+  .video iframe {
+    width: 300px;
+    height: 200px;
+  }
+  .contenedor-texto-trabajos {
+    padding: 0px;
+    padding-top: 10px;
+    font-size: 1em;
+  }
+  .contenedor-pagina-inicio h2 {
+    font-size: 2em;
+  }
+  .contenedor-pagina-inicio p {
+    font-size: 1.2em;
+  }
+  .contenedor-pagina-inicio h1 {
+    font-size: 5em;
+  }
+  .sv {
+    width: 380px;
+  }
+  .Services h2 {
+    font-size: 3em;
+    padding-left: 20px;
+    padding-top: 20px;
+  }
+  .skills img {
+    width: 40px;
+    margin: 30px;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .sv {
+    width: 380px;
+  }
+  .sv h3 {
+    font-size: 1.4em;
+  }
+  .sv p {
+    font-size: 1em;
+  }
+  .trabajos h2 {
+    margin-left: 20px;
+    font-size: 3em;
+  }
+}
+
+@media only screen and (max-width: 430px) {
+  .sv {
+    width: 300px;
+  }
+}

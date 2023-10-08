@@ -39,9 +39,8 @@ const Home = () => {
             Soy <span>Leonardo Decanini</span>
           </h2>
           <p>
-            Hola soy leonardo decanini, soy diseñador y programador web, tengo
-            19 años.Soy desarrollador web, Mis conocimientos abarcan : Stack
-            MERN.
+            soy diseñador y programador web, tengo 19 años.Soy desarrollador
+            web, Mis conocimientos abarcan : Stack MERN.
           </p>
         </div>
 
@@ -167,13 +166,15 @@ const Home = () => {
               funcionar totalmente
             </p>
             <p>
-              <a href="http://www.prismateweb.com" className="urlpag" target="_blank">
+              <a
+                href="http://www.prismateweb.com"
+                className="urlpag"
+                target="_blank"
+              >
                 Ir a la pagina
               </a>
             </p>
-            <p className="color-cursos">
-              React
-            </p>
+            <p className="color-cursos">React</p>
           </div>
         </div>
 
@@ -254,8 +255,10 @@ const Home = () => {
               que sea escalable, en este cado se implementa un abm y const
               sistema de reguistro con json tokem, para los usuarios;
             </p>
-            <p>Actualmente esta en desarroyo</p>
-            <p className="color-cursos">React - MySQL - Node.js - Express - jwt - (proximamente Redux)</p>
+            <p>Actualmente esta en desarrollo</p>
+            <p className="color-cursos">
+              React - MySQL - Node.js - Express - jwt - (proximamente Redux)
+            </p>
           </div>
         </div>
       </section>
